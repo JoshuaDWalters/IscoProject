@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/IscoProject.unity
-  isLoaded: 1
-  isActive: 1
