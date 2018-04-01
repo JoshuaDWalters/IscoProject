@@ -8,11 +8,10 @@ public class CursorCamera : MonoBehaviour {
 	public float sentitivity = 5.0f;
 	public float smoothing = 2.0f;
 
-		GameObject character;
+	// GameObject character;
 
-	void Start () 
-	{
-		character = this.transform.parent.gameObject;
+	void Start () {
+		// character = this.transform.parent.gameObject;
 	}
 
 	void Update () {
@@ -22,7 +21,7 @@ public class CursorCamera : MonoBehaviour {
 		mouseLook += smoothV;
 
 		transform.localRotation = Quaternion.AngleAxis (-mouseLook.y, Vector3.right);
-			character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
+		// character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
 		
 	}
 }﻿
