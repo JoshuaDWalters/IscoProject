@@ -23,6 +23,7 @@ public class SlimeMover : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		if(other.gameObject.tag == "Food") {
 			Debug.Log (other.gameObject.name + " collected!");
+			DestroyObject (food);
 			//Do not destroy food here. Add food property here. Food code block will de-activate it once collected.
 
 			Instantiate (gem, slime.position, slime.rotation);
